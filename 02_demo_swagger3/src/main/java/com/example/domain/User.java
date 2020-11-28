@@ -1,8 +1,15 @@
 package com.example.domain;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel("(User) User实体类")
 public class User {
+    @ApiModelProperty("id")
     public Long id;
+    @ApiModelProperty("name 名字")
     public String name;
+    @ApiModelProperty("age 年龄")
     public Integer  age;
 
     public Long getId() {
